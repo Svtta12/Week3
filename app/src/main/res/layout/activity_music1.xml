@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#748B83"
+    tools:context=".MusicActivity1">
+
+    <Toolbar
+        android:id="@+id/more"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"
+        android:foreground="@drawable/ic_baseline_ex"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_playing_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/playing_now"
+        android:textColor="#736E6E"
+        app:layout_constraintStart_toEndOf="@+id/more"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="70dp"
+        android:text="@string/music_for_sex"
+        android:textColor="#736E6E"
+        app:layout_constraintStart_toEndOf="@+id/more"
+        app:layout_constraintTop_toBottomOf="@+id/text_playing_now"
+        app:drawableEndCompat="@drawable/ic_baseline_bar" />
+
+    <Toolbar
+        android:id="@+id/device_music"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="60dp"
+        android:foreground="@drawable/ic_baseline_devices"
+        app:layout_constraintStart_toEndOf="@id/text_playing_now"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Toolbar
+        android:id="@+id/list_music"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:foreground="@drawable/ic_baseline_list"
+        app:layout_constraintStart_toEndOf="@id/device_music"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_one"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:paddingTop="28dp"
+        android:paddingEnd="30dp"
+        android:src="@drawable/intermezzo"
+        app:layout_constraintEnd_toStartOf="@+id/image_angel"
+        app:layout_constraintTop_toBottomOf="@+id/text_two" />
+
+    <ImageView
+        android:id="@+id/image_angel"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:paddingTop="30dp"
+        android:src="@drawable/angel"
+        app:layout_constraintTop_toBottomOf="@id/text_two"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_two"
+        android:layout_width="270dp"
+        android:layout_height="270dp"
+        android:paddingTop="28dp"
+        android:paddingStart="30dp"
+        android:src="@drawable/intermezzo"
+        app:layout_constraintStart_toEndOf="@+id/image_angel"
+        app:layout_constraintTop_toBottomOf="@+id/text_two" />
+
+    <TextView
+        android:id="@+id/text_angel_feat_julie_elven"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/angel_feat_julie_elven"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_angel" />
+
+
+    <View
+        android:id="@+id/image_reply"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:foreground="@drawable/ic_baseline_reply"
+        app:layout_constraintStart_toEndOf="@id/text_angel_feat_julie_elven"
+        app:layout_constraintTop_toBottomOf="@id/image_angel" />
+
+    <View
+        android:id="@+id/image_more"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:foreground="@drawable/ic_baseline_more"
+        app:layout_constraintStart_toEndOf="@id/image_reply"
+        app:layout_constraintTop_toBottomOf="@id/image_angel"/>
+
+
+    <TextView
+        android:id="@+id/text_armando_morabito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="50dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/r_armando_morabito"
+        android:textColor="@color/grey_200"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_angel_feat_julie_elven" />
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:paddingStart="35dp"
+        android:paddingTop="20dp"
+        android:layout_marginEnd="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_armando_morabito" />
+
+    <TextView
+        android:id="@+id/time_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingStart="45dp"
+        android:paddingTop="7dp"
+        android:text="@string/time_start"
+        android:textColor="@color/grey_200"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seek_bar" />
+
+    <TextView
+        android:id="@+id/time_finish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="7dp"
+        android:paddingEnd="40dp"
+        android:text="@string/tine_finish"
+        android:textColor="@color/grey_200"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/seek_bar" />
+
+    <View
+        android:id="@+id/image_favorite"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:foreground="@drawable/ic_baseline_favorite"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time_start" />
+
+    <View
+        android:id="@+id/image_skip_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:foreground="@drawable/ic_baseline_skip_previous_24"
+        app:layout_constraintStart_toEndOf="@id/image_favorite"
+        app:layout_constraintTop_toBottomOf="@id/time_start"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_play"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/rounded_button"
+        android:backgroundTint="@color/grey"
+        android:foreground="@drawable/ic_baseline_play_arrow_24"
+        android:foregroundGravity="center|clip_vertical"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        app:layout_constraintStart_toEndOf="@+id/image_skip_back"
+        app:layout_constraintTop_toBottomOf="@+id/time_start"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <View
+        android:id="@+id/image_skip_next"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="60dp"
+        android:foreground="@drawable/ic_baseline_skip_next"
+        app:layout_constraintStart_toEndOf="@id/button_play"
+        app:layout_constraintTop_toBottomOf="@id/time_start"/>
+
+    <View
+        android:id="@+id/image_no_favorite"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="70dp"
+        android:foreground="@drawable/ic_baseline_fav"
+        app:layout_constraintStart_toEndOf="@id/image_skip_next"
+        app:layout_constraintTop_toBottomOf="@id/time_start"/>
+
+    <View
+        android:id="@+id/image_reply_again"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:foreground="@drawable/ic_baseline_autorenew"
+        app:layout_constraintTop_toBottomOf="@id/button_play"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <View
+        android:id="@+id/image_hq"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:foreground="@drawable/ic_baseline_high"
+        app:layout_constraintTop_toBottomOf="@id/button_play"
+        app:layout_constraintStart_toEndOf="@id/image_reply_again"/>
+
+    <View
+        android:id="@+id/image_timer"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:foreground="@drawable/ic_baseline_timer"
+        app:layout_constraintTop_toBottomOf="@id/button_play"
+        app:layout_constraintStart_toEndOf="@id/image_hq"/>
+
+    <View
+        android:id="@+id/image_mix"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="100dp"
+        android:foreground="@drawable/ic_baseline_shuffle"
+        app:layout_constraintTop_toBottomOf="@id/button_play"
+        app:layout_constraintStart_toEndOf="@id/image_timer"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicActivity2"
+    android:background="#748B83"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Toolbar
+            android:id="@+id/toolbar_more"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="5dp"
+            android:foreground="@drawable/ic_baseline_ex" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text_playing_now"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/playing_now"
+                android:textColor="#736E6E" />
+
+            <TextView
+                android:id="@+id/text_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="70dp"
+                android:text="@string/music_for_sex"
+                android:textColor="#736E6E"
+                app:drawableEndCompat="@drawable/ic_baseline_bar" />
+
+        </LinearLayout>
+
+        <Toolbar
+            android:id="@+id/toolbar_device_music"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="30dp"
+            android:foreground="@drawable/ic_baseline_devices" />
+
+        <Toolbar
+            android:id="@+id/toolbar_list_music"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="20dp"
+            android:foreground="@drawable/ic_baseline_list" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/image_one"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginStart="-210dp"
+            android:src="@drawable/intermezzo" />
+
+        <ImageView
+            android:id="@+id/image_angel"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            android:src="@drawable/angel" />
+
+        <ImageView
+            android:id="@+id/image_two"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/intermezzo" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:text="@string/angel_feat_julie_elven"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/text_dva"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/r_armando_morabito"
+                android:textColor="@color/grey_200"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/image_reply"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:foreground="@drawable/ic_baseline_reply" />
+
+        <View
+            android:id="@+id/image_more"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="30dp"
+            android:foreground="@drawable/ic_baseline_more" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seek_bar"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/text_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/time_start"
+            android:textColor="@color/grey_200"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/text_finish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="7dp"
+            android:layout_marginStart="270dp"
+            android:text="@string/tine_finish"
+            android:textColor="@color/grey_200"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <View
+            android:id="@+id/image_favorite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="70dp"
+            android:foreground="@drawable/ic_baseline_favorite"
+            />
+
+        <View
+            android:id="@+id/image_skip_back"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:foreground="@drawable/ic_baseline_skip_previous_24"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button_play"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/rounded_button"
+            android:backgroundTint="@color/grey"
+            android:foreground="@drawable/ic_baseline_play_arrow_24"
+            android:foregroundGravity="center|clip_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <View
+            android:id="@+id/image_skip_next"
+            android:layout_width="50sp"
+            android:layout_height="50sp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="60dp"
+            android:foreground="@drawable/ic_baseline_skip_next"/>
+
+        <View
+            android:id="@+id/image_no_favorite"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="70dp"
+            android:foreground="@drawable/ic_baseline_fav" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <View
+            android:id="@+id/toolbar_autorenew"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="5dp"
+            android:foreground="@drawable/ic_baseline_autorenew" />
+
+        <View
+            android:id="@+id/image_high"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="5dp"
+            android:foreground="@drawable/ic_baseline_high"/>
+
+        <View
+            android:id="@+id/image_timer"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="5dp"
+            android:foreground="@drawable/ic_baseline_timer" />
+
+        <View
+            android:id="@+id/image_shuffle"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="5dp"
+            android:foreground="@drawable/ic_baseline_shuffle" />
+
+    </LinearLayout>
+
+</LinearLayout>
